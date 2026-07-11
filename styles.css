@@ -1,0 +1,156 @@
+:root {
+  color-scheme: dark;
+  color: #ffffff;
+  background: #05070d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #05070d 0%, #111827 100%);
+}
+
+.hero {
+  position: relative;
+  padding: 3rem 1rem;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.22), transparent 40%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(12px);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin: 0;
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 1rem auto 2rem;
+  max-width: 680px;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.server-card {
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(96, 165, 250, 0.18);
+  text-align: left;
+}
+
+.server-card h2 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+.server-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.server-card li {
+  margin-bottom: 0.85rem;
+  color: #e2e8f0;
+  font-size: 0.98rem;
+}
+
+.server-card a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+.server-card a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  padding: 3rem 1rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2,
+.features h3 {
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+}
+
+section p,
+.features p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.features article {
+  padding: 1.4rem;
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 2rem 0.75rem;
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+  }
+}
